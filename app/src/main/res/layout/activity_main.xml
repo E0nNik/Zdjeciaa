@@ -44,7 +44,84 @@
         android:progress="1"
         android:layout_toRightOf="@id/tv2"
         android:layout_below="@id/tv1"
+        />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skalowanie:"
+        android:textSize="20dp"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/tv3"
+        android:layout_below="@id/tv2"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/Seek2"
+        android:max="255"
+        android:progress="255"
+        android:layout_below="@id/tv2"
+        android:layout_toRightOf="@id/tv3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotacja:"
+        android:textSize="20dp"
+        android:id="@+id/tv4"
+        android:layout_marginLeft="20sp"
+        android:layout_below="@id/tv3"
+       />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/Seek3"
+        android:max="360"
+        android:layout_below="@id/tv3"
+        android:layout_toRightOf="@id/tv4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kolor:"
+        android:textSize="20dp"
+        android:id="@+id/tv5"
+        android:layout_marginLeft="20sp"
+        android:layout_below="@id/tv4"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/Seek4"
+        android:max="255"
+        android:progress="255"
+        android:layout_below="@id/tv5"
+
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/Seek5"
+        android:max="255"
+        android:progress="255"
+        android:layout_below="@id/Seek4"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/Seek6"
+        android:max="255"
+        android:progress="255"
+        android:layout_below="@+id/Seek5"
         />
 
 
