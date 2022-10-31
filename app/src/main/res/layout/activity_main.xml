@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:src="@drawable/zdjeciee"
+        android:id="@+id/zdjecie"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edycja zdjecia"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_below="@id/zdjecie"
+        android:id="@+id/tv1"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Przezroczystosc"
+        android:textSize="20dp"
+        android:id="@+id/tv2"
+        android:layout_marginLeft="20sp"
+         android:layout_below="@+id/tv1"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:id="@+id/seek1"
+        android:max="10"
+        android:min="1"
+        android:progress="1"
+        android:layout_toRightOf="@id/tv2"
+        android:layout_below="@id/tv1"
+
+        />
+
+
 
 </RelativeLayout>
