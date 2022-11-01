@@ -1,11 +1,12 @@
 package com.example.zdjeciaa;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -100,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         Seek6.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                blue = 1;
+                blue = i;
                 kolor();
             }
 
@@ -114,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void kolor() {
-        zdjecie.setColorFilter(Color.rgb(r,g,blue), PorterDuff.Mode.MULTIPLY);
+       zdjecie.setColorFilter(Color.rgb(r,g,blue), PorterDuff.Mode.MULTIPLY);
+
     }
 }
