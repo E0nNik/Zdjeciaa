@@ -8,7 +8,7 @@
 
     <ImageView
         android:layout_width="300dp"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:src="@drawable/zdjeciee"
         android:id="@+id/zdjecie"
         android:layout_centerHorizontal="true"
@@ -39,11 +39,10 @@
         android:layout_height="30dp"
         android:layout_margin="8dp"
         android:id="@+id/seek1"
-        android:max="10"
+        android:max="200"
         android:min="1"
         android:progress="1"
-        android:layout_toRightOf="@id/tv2"
-        android:layout_below="@id/tv1"
+        android:layout_below="@id/tv2"
         />
 
     <TextView
@@ -53,7 +52,7 @@
         android:textSize="20dp"
         android:layout_marginLeft="20sp"
         android:id="@+id/tv3"
-        android:layout_below="@id/tv2"
+        android:layout_below="@id/seek1"
         />
     <SeekBar
         android:layout_width="match_parent"
@@ -62,8 +61,7 @@
         android:id="@+id/Seek2"
         android:max="255"
         android:progress="255"
-        android:layout_below="@id/tv2"
-        android:layout_toRightOf="@id/tv3"
+        android:layout_below="@id/tv3"
         />
 
     <TextView
@@ -73,7 +71,7 @@
         android:textSize="20dp"
         android:id="@+id/tv4"
         android:layout_marginLeft="20sp"
-        android:layout_below="@id/tv3"
+        android:layout_below="@id/Seek2"
        />
 
     <SeekBar
@@ -82,8 +80,8 @@
         android:layout_margin="8dp"
         android:id="@+id/Seek3"
         android:max="360"
-        android:layout_below="@id/tv3"
-        android:layout_toRightOf="@id/tv4"
+        android:layout_below="@id/tv4"
+
         />
 
     <TextView
@@ -93,7 +91,7 @@
         android:textSize="20dp"
         android:id="@+id/tv5"
         android:layout_marginLeft="20sp"
-        android:layout_below="@id/tv4"
+        android:layout_below="@id/Seek3"
         />
     <SeekBar
         android:layout_width="match_parent"

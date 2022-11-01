@@ -1,12 +1,12 @@
 package com.example.zdjeciaa;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Seek5 = (SeekBar) findViewById(R.id.Seek5);
         Seek6 = (SeekBar) findViewById(R.id.Seek6);
         zdjecie = (ImageView) findViewById(R.id.zdjecie);
+        SeekP.setProgress(255);
 
         SeekP.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
